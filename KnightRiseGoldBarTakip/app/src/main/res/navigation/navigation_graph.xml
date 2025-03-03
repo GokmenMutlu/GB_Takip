@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/knightOnlineFragment">
+
+    <!-- Knight Online Fragment -->
+    <fragment
+        android:id="@+id/knightOnlineFragment"
+        android:name="com.gokmenmutlu.knightrisegoldbartakip.view.KnightOnlineFragment"
+        android:label="Knight Online"
+        tools:layout="@layout/fragment_knight_online" />
+
+    <!-- Rise Online Fragment -->
+    <fragment
+        android:id="@+id/riseOnlineFragment"
+        android:name="com.gokmenmutlu.knightrisegoldbartakip.view.RiseOnlineFragment"
+        android:label="Rise Online"
+        tools:layout="@layout/fragment_rise_online" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.gokmenmutlu.knightrisegoldbartakip.view.AboutFragment"
+        android:label="AboutFragment" />
+</navigation>

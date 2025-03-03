@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/knightOnlineFragment"
+        android:title="Knight Online"
+        android:icon="@drawable/logo_knightonline" />
+
+    <item
+        android:id="@+id/riseOnlineFragment"
+        android:title="Rise Online"
+        android:icon="@drawable/logo_riseonline" />
+
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="Info"
+        android:icon="@drawable/logo_gbtakip" />
+
+</menu>

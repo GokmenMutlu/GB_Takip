@@ -1,0 +1,22 @@
+# IDE ve Yapılandırma Dosyaları
+*.iml
+.gradle
+/local.properties
+/.idea/
+/.DS_Store
+
+# Derleme (Build) Dosyaları
+/build/
+.captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore ve API Anahtarları (Gizli Bilgiler)
+*.jks
+*.keystore
+/google-services.json
+/gradle.properties
+
+# APK ve AAB Dosyaları Yüklenmemeli
+*.apk
+*.aab

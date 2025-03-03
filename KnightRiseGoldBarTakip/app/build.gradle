@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application' // veya id 'com.android.application'
+    id 'org.jetbrains.kotlin.android' // veya id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services' // Google Services eklentisi
+    id 'com.google.firebase.crashlytics' // Crashlytics eklendi
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file(System.getenv("STORE_FILE") ?: project.properties["STORE_FILE"])
+            storePassword System.getenv("STORE_PASSWORD") ?: project.properties["STORE_PASSWORD"]
+            keyAlias System.getenv("KEY_ALIAS") ?: project.properties["KEY_ALIAS"]
+            keyPassword System.getenv("KEY_PASSWORD") ?: project.properties["KEY_PASSWORD"]
+        }
+    }
+    namespace 'com.gokmenmutlu.knightrisegoldbartakip'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.gokmenmutlu.knightrisegoldbartakip"
+        minSdk 28
+        targetSdk 34
+        versionCode 5
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true // Firebase için önemli
+        resValue "string", "admob_app_id", "${ADMOB_APP_ID}"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true // Kullanılmayan kaynakları da küçült
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+    implementation libs.androidx.swiperefreshlayout
+
+
+    implementation platform('com.google.firebase:firebase-bom:33.9.0')
+    // Firebase bağımlılıkları
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    // implementation 'com.google.firebase:firebase-appcheck-playintegrity:16.1.0'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'androidx.multidex:multidex:2.0.1' // MultiDex ekledik
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation libs.firebase.analytics.ktx
+    implementation libs.androidx.junit.ktx
+
+    //Reklam - ad
+    implementation 'com.google.android.gms:play-services-ads:23.6.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    //Crashlytics
+    implementation("com.google.firebase:firebase-crashlytics")
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
