@@ -18,10 +18,13 @@ Uygulama, oyun içi ekonomik dalgalanmaları takip etmek ve oyuncuların en uygu
 
 
 ## 🛠 Kullanılan Teknolojiler  
+
 - **Kotlin** 
 - **MVVM (Model-View-ViewModel)** 
 - **Firebase Firestore** – Gerçek zamanlı veri depolama
-- **Firebase Functions** – Gerçek zamanlı veri çekme 
+- **Firebase Functions** – Gerçek zamanlı veri çekme
+- **Firebase Crashlytics** – Hata izleme ve çökmeleri raporlama  
+- **Google AdMob** – Uygulama açılışında reklam gösterimi  
 - **Glide** – Resim yükleme ve önbellekleme için
 
 ## 📩 İletişim & Katkıda Bulunma
