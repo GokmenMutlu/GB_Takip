@@ -13,7 +13,7 @@ Uygulama, oyun içi ekonomik dalgalanmaları takip etmek ve oyuncuların en uygu
 ✅ **Anlık Fiyat Güncellemeleri** – Sitelerden anlık olarak veri çekilir ve güncellenir.  
 ✅ **Fiyat Karşılaştırma** – Farklı sitelerin alış ve satış fiyatlarını görebilirsiniz.  
 ✅ **Minimal ve Kullanıcı Dostu Arayüz** – Temiz ve basit bir UI ile kolay kullanım sağlar.  
-✅ **Knight Online & Rise Online Desteği** – Her iki oyun için de güncel fiyatları takip edebilirsiniz.  
+✅ Knight Online & Rise Online – Her iki oyun için de güncel fiyatları takip edebilirsiniz.  
 ✅ **Hızlı ve Güvenilir** – Firebase Firestore altyapısı ile hızlı ve güvenli veri sunar.  
 
 
