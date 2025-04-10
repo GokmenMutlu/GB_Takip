@@ -10,6 +10,7 @@ Firebase üzerindeki fiyatlar otomatik olarak Firebase fonksiyonu sayesinde beli
 Uygulama, oyun içi ekonomik dalgalanmaları takip etmek ve oyuncuların en uygun fiyatları bulmasına yardımcı olmak için geliştirilmiştir. 
 
 Dilerseniz Google Play Store'dan telefonunuza indirerek test edip geri bildirim verebilirsiniz.
+
 https://play.google.com/store/apps/details?id=com.gokmenmutlu.knightrisegoldbartakip
 
 ## 🚀 Özellikler  
